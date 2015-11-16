@@ -96,4 +96,8 @@ class StringRuleTests: XCTestCase {
     func testStatementPosition() {
         verifyRule(StatementPositionRule.description)
     }
+
+    func testMissingDocs() {
+        verifyRule(MissingDocsRule.description, commentDoesntViolate: false)
+    }
 }

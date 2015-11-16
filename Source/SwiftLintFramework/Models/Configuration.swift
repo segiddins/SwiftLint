@@ -137,7 +137,8 @@ public struct Configuration {
             ControlStatementRule(),
             OpeningBraceRule(),
             CommaRule(),
-            StatementPositionRule()
+            StatementPositionRule(),
+            MissingDocsRule()
         ] + parameterRulesFromYAML(yaml)
     }
 
