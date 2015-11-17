@@ -92,4 +92,8 @@ class StringRuleTests: XCTestCase {
     func testTrailingSemicolon() {
         verifyRule(TrailingSemicolonRule.description)
     }
+
+    func testEmptyCount() {
+        verifyRule(EmptyCountRule.description)
+    }
 }
